@@ -19,5 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^event/', include('event.urls'), name='event')
+    url(r'^event/', include('event.urls'), name='event'),
+    url(r'^authentication/', include('authentication.urls'), name='authentication')
 ]

@@ -1,8 +1,9 @@
 from django.conf.urls import url
 
+from event.views import EventCreate
 from . import views
 
 urlpatterns = [
 
-    url(r'^event/getName', views.GetName, name='event')
+    url(r'^create/', EventCreate.as_view(), name='event')
 ]
